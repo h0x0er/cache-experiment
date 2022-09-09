@@ -1,6 +1,6 @@
 name: Cache Experiment
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 jobs:
   Cache:
