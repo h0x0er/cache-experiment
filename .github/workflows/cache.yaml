@@ -1,0 +1,13 @@
+name: Cache Experiment
+on:
+  workflow-dispatch:
+
+jobs:
+  Cache:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: h0x0er/harden-runner@cache-endp
+    - run: echo "sampel text file" > /home/runner/sample.txt
+    - run: cat /home/runner/sample.txt
+    
